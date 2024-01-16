@@ -1,7 +1,7 @@
 const ListElements = (props) => {
     return ( 
         <>
-        <li><a href={props.link}>{props.navTo}</a></li>
+            <li><a>{props.navTo}</a></li>
         </>
     );
 }

@@ -3,6 +3,8 @@ import './App.css'
 import Button from './components/button/Button'
 import H2 from './components/h2/H2'
 import Nav from './components/nav/Nav'
+import ProjectSections from './components/projectSections/ProjectSections'
+import SkillDivs from './components/skillDivs/SkillDivs'
 
 function App() {
   
@@ -20,11 +22,26 @@ function App() {
         />
         <H2
         h2 = {"Projects"}
-        id = {"projects"}
+        />
+        <ProjectSections
+        title = {"Project1"}
+        text = {"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut veritatis laboriosam doloribus illum magni."}
+        description = {"JavaScript React Sass"}
+        />
+        <ProjectSections
+        title = {"Project2"}
+        text = {"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut veritatis laboriosam doloribus illum magni."}
+        description = {"JavaScript React Sass"}
+        />
+        <ProjectSections
+        title = {"Project3"}
+        text = {"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut veritatis laboriosam doloribus illum magni."}
+        description = {"JavaScript React Sass"}
         />
         <H2
         h2 = {"Skills"}
         />
+        <SkillDivs/>
         <H2
         h2 = {"Contact"}
         />
