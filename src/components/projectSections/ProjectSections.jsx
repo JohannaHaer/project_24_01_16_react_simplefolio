@@ -1,3 +1,5 @@
+import "./projectSections.css"
+
 const ProjectSections = (props) => {
     return ( 
         <>

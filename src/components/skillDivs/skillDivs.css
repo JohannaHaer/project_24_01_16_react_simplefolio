@@ -1,0 +1,13 @@
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills div {
+    background-color: rgba(0, 0, 0, 0.51);
+    padding: 0.5rem;
+    border-radius: 5px;
+}

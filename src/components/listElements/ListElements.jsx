@@ -1,3 +1,5 @@
+import "./listElements.css"
+
 const ListElements = (props) => {
     return ( 
         <>

@@ -1,7 +1,8 @@
 import ListElements from "../listElements/ListElements";
 import Logo from "../../assets/img/react-logo.png"
+import "./nav.css"
 
-const Nav = (props) => {
+const Nav = () => {
     return ( 
         <>
             <header>
