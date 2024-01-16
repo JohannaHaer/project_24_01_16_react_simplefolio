@@ -1,20 +1,23 @@
 import ListElements from "../listElements/ListElements";
+import Logo from "../../assets/img/react-logo.png"
 
 const Nav = (props) => {
     return ( 
         <>
-            <ListElements
-            navTo = {"Projects"}
-            link = {props.id}
-            />
-            <ListElements
-            navTo = {"Skills"}
-            link = {"https://github.com/JohannaHaer/project_24_01_16_react_simplefolio"}
-            />
-            <ListElements
-            navTo = {"Contact"}
-            link = {"https://github.com/JohannaHaer/project_24_01_16_react_simplefolio"}
-            />
+            <header>
+                <img src={Logo} alt="" />
+                <nav>
+                    <ListElements
+                    navTo = {"Projects"}
+                    />
+                    <ListElements
+                    navTo = {"Skills"}
+                    />
+                    <ListElements
+                    navTo = {"Contact"}
+                    />
+                </nav>
+            </header>
         </>
     );
 }
