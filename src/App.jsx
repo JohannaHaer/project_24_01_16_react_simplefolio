@@ -1,33 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Button from './components/button/Button'
+import H2 from './components/h2/H2'
+import Nav from './components/nav/Nav'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    
+      <header>
+      <Nav/>
+
+      </header>
+      <main>
+        <h1>Hi, I am John Smith</h1>
+        <h3>A Front End Developer</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut veritatis laboriosam doloribus illum magni recusandae aspernatur sunt consequuntur ullam, reprehenderit dolores fuga minima, accusamus odit deleniti eligendi tempore quos odio.
+        Qui quasi nisi commodi suscipit dolorum explicabo accusantium autem!</p>
+        <Button
+        title = {"resume"}
+        />
+        <H2
+        h2 = {"Projects"}
+        id = {"projects"}
+        />
+        <H2
+        h2 = {"Skills"}
+        />
+        <H2
+        h2 = {"Contact"}
+        />
+        <Button
+        title = {"email me"}
+        />
+      </main>
+      <footer>
+        <p>Created by John Smith</p>
+      </footer>
     </>
   )
 }
